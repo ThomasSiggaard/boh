@@ -1,0 +1,21 @@
+{
+  "name": "boh dev container",
+  "image": "ghcr.io/thomassiggaard/boh:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": ["GraphQL.vscode-graphql", "Shopify.polaris-for-vscode", "GraphQL.vscode-graphql-syntax"]
+    },
+    "settings": {
+      "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "bash",
+          "icon": "terminal-bash"
+        }
+      },
+      "terminal.integrated.defaultProfile.linux": "bash"
+    }
+  },
+  "remoteEnv": {
+    "DOCKER_CONFIG": "/root/.docker"
+  }
+}
